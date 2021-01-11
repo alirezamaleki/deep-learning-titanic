@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'result.css' %}">
+</head>
+<body>
+    <h1>Here are the results</h1>
+    <a href="{% url 'home' %}">back to homepage</a>
+    <br><br>
+    <img src="{% static 'image.jpg' %}" alt="">
+    <br>
+    <p>Result is:</p>
+    <p>{{prediction}}</p>
+</body>
+</html>
